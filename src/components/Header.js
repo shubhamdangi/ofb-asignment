@@ -17,7 +17,7 @@ function Header() {
           Public
         </span>
         <br />
-        <div className="lower-header">
+        <div className="header__lower">
           <p> &lt;&gt; Code</p>
           <p style={{ borderBottom: "1px solid orange" }}> &#9673; Issues</p>
           <p> &#8593; Pull requests</p>

@@ -32,17 +32,18 @@ function Issues() {
                 {data.map((user) => (
                   <li class="list-group-item dash" key={user.id}>
                     <h5>
-                      {" "}
                       <span style={{ color: "green" }}>&#9673; </span>{" "}
-                      {user.title}{" "}
-                      <span
-                        style={{
-                          backgroundColor: "violet",
-                          borderRadius: "5px",
-                          fontSize: "15px",
-                        }}
-                      >
+                      {user.title}
+                      {user.labels[2] ? (
+                        <span className="message message__component">
+                          {user.labels[2]?.name}
+                        </span>
+                      ) : null}
+                      <span className="message message__type">
                         Type:{user.user.type}
+                      </span>
+                      <span className="message message__bug">
+                        {user.labels[0]?.name}
                       </span>
                     </h5>
                     <p style={{ color: "grey" }}>
@@ -50,7 +51,7 @@ function Issues() {
                     </p>
                     {user.labels.map((i) => {
                       <p>{i.name}</p>;
-                    })}{" "}
+                    })}
                   </li>
                 ))}
 

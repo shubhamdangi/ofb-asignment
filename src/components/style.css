@@ -13,12 +13,30 @@
   background-color: grey;
 }
 
+.message {
+  border-radius: 15px;
+  font-size: 14px;
+  padding: 3px;
+  margin: 3px;
+}
+
+.message__bug {
+  background-color: #ff8b8b;
+}
+
+.message__type {
+  background-color: violet;
+}
+
+.message__component {
+  background-color: yellow;
+}
+
 .Header {
   font-family: "Open Sans", sans-serif;
   height: 52px;
   width: 100%;
   background-color: #eeeeee;
-  /* position: relative; */
   top: 0;
   z-index: 100;
 }
@@ -29,13 +47,13 @@
   background-color: #eeeeee;
 }
 
-.lower-header {
+.header__lower {
   padding: 20px;
   display: flex;
   color: black;
   background-color: #eeeeee;
 }
 
-.lower-header > p {
+.header__lower > p {
   padding-left: 30px;
 }
